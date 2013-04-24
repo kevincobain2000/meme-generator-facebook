@@ -1,0 +1,99 @@
+/*
+Author : Onextrapixel
+URL: http://www.onextrapixel.com
+*/
+
+* {
+	border:none; 
+	margin:0; 
+	padding:0;
+}
+
+body {
+	background:#fff; 
+	color: #000; 
+	font:22.35px Georgia, Arial, "Lucida Grande", Verdana, sans-serif;
+}
+
+a:link. a:visited {
+	color:#0054a6;
+	text-decoration:none; 
+}
+
+a:hover {
+	text-decoration:underline
+}
+
+h1 {
+	font-size:20px;
+	margin-bottom:20px; 
+}
+
+#wrap {
+	margin:10px auto;
+	width:900px; 
+}
+
+p {
+	margin:15px 0;
+}
+
+#header {
+	margin-bottom:20px;
+}
+
+label {
+	display:block; 
+	padding-bottom:5px; 
+	margin-top:20px;
+}
+
+#contactform {
+	width:900px; 
+	overflow:hidden;
+}
+
+#contactform li {
+	list-style:none; 
+	padding-bottom:20px;
+}
+
+#contactform li .fieldbox {
+	background:transparent url(images/subfield.jpg) no-repeat top left; 
+	float:left; 
+	height:27px; 
+	padding-left:5px;
+}
+
+#contactform li .fieldbox input {
+	background:transparent url(images/subfield.jpg) no-repeat top right; 
+	height:27px; 
+	padding-top:5px;
+	width:400px;
+}
+
+#contactform li .fieldbox #contact {
+	width:200px;
+}
+
+#contactform li .msgbox {
+	background:transparent url(images/msgfield.jpg) no-repeat top left; 
+	float:left; 
+	height:110px; 
+	padding-left:5px;
+}
+
+#contactform li .msgbox textarea {
+	background:transparent url(images/msgfield.jpg) no-repeat top right; 
+	height:110px;
+	padding-top:5px;
+	width:500px;	 
+}
+
+#sendbutton {
+	background:#acb4cb; color:#fff; 
+	cursor:pointer;
+	padding:5px 10px; 
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px
+}

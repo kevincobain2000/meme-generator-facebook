@@ -1,0 +1,55 @@
+<html>
+  <head>
+	  <link rel="stylesheet" type="text/css" href="templates/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="templates/css/forms.css">
+		<link rel="stylesheet" type="text/css" href="templates/css/button.css">
+	</head>
+<body>
+<style>
+
+body
+{
+background-image:url('http://us.cdn3.123rf.com/168nwm/apostrophe/apostrophe1208/apostrophe120800052/14793029-plain-abstract-gray-background-paper-with-vintage-grunge-background-texture-parchment-black-and-whit.jpg');
+background-color:#cccccc;
+}
+
+</style>
+
+<br><br><FONT size="10" FACE="cool_font"><center>
+    What are Internet MEMES ?<br>
+    <center></FONT><br><br>
+<center>In a nutshell, Write Funny text on images<br>画像に変なテキストを書き込む</center>
+
+{{if isset($smarty.get.m)}}
+<br><br><FONT size="15" FACE="cool_font"><center>POSTED on FACEBOOK !<center></FONT><br><br>
+<center><a target="_blank" href="http://www.facebook.com/">Facebook</a></center>
+{{/if}}
+
+<form action="" method="POST" id="form4">
+  <center><FONT size="10" FACE="cool_font">Meme Image</FONT></center><input type="text" placeholder="grumpy cat" name="q"> <br><br>
+	<center><FONT size="10" FACE="cool_font">Top Meme </FONT></center>  <input type="text" placeholder="Leave me" name="topmeme"><br><br>
+	<center><FONT size="10" FACE="cool_font">Bottom Meme </FONT></center> <input type="text" placeholder="Alone" name="bottommeme"><br><br>
+	<input type="submit" class="btn-custom" value="Submit">
+</form>
+
+{{if $image_results}}
+<br><br><FONT size="15" FACE="cool_font"><center>Click Image to Post on Facebook<center></FONT><br><br>
+<a href="facebook-post.php?image={{$memed_images_local[0]}}.jpg"><img src="savedimages/{{$memed_images_local[0]}}.jpg"</a>
+{{/if}}
+<!---
+{{if $image_results}}
+
+<br><br><FONT size="15" FACE="cool_font"><center>Click Image to Post on Facebook<center></FONT><br><br>
+
+	<div class="portfolio">
+	  <ul id="grid">
+	{{foreach from=$image_results['responseData']['results'] item=result key=counter}}
+      <li><a href="facebook-post.php?image={{$memed_images_local[$counter]}}.jpg"><img src="savedimages/{{$memed_images_local[$counter]}}.jpg"</a></li>
+    {{/foreach}}
+	 	</ul>
+	</div>
+	{{/if}}
+
+	--->
+</body>
+</html>

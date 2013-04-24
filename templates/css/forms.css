@@ -1,0 +1,64 @@
+/* form 4 */
+
+	#form4{
+		margin:0 auto;
+		padding-top:1.5em;
+		color:#246878;
+		width:200px; /* customize width, this form have fluid layout */
+		}
+	#form4 h3{
+		margin:0 20px;
+		height:28px;
+		text-indent:-8000px;
+		}		
+	#form4 fieldset{
+		margin:0;
+		padding:2;
+		border:none;	
+		padding-bottom:1em;
+		}		
+::-webkit-input-placeholder {
+   color: black;
+	font-size:12px;
+}
+
+:-ms-input-placeholder {  
+   color: red;  
+	font-size:40px;
+}
+	#form4 legend{display:none;}	
+	#form4 p{margin:.5em 20px;}	
+	#form4 label{display:block;}	
+	#form4 input, #form4 textarea{		
+		width:302px;
+		border:1px solid #dfdfdf;
+		background:#fff;
+		padding:5px 3px;
+		height:45px;
+		}		
+@font-face {
+	font-family: cool_font;
+	src: url('../fonts/kberry.ttf');
+}
+
+	#form4 textarea{
+		height:125px;
+		overflow:auto;
+		}					
+	#form4 p.submit{
+		text-align:right;
+	
+		}	
+	#form4 button{
+		margin:0;
+		padding:0;
+		text-indent:-8000px;
+		overflow:hidden;
+		width:88px;
+		height:56px;
+		border:none;
+		cursor:pointer;
+		text-align:left;
+		}				
+
+/* // form 4 */
