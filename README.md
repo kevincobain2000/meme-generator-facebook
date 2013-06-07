@@ -5,7 +5,7 @@ MEME GENERATOR using PHP and Post the resulting image to Facebook
 
 <pre>
 
-<?php
+
 
 define("ROOT_DIR", "/Library/WebServer");
 //Your path to the Smarty Class
@@ -22,6 +22,6 @@ class MySmarty extends Smarty {
 
 }
 
-?>
+
 
 </pre>
